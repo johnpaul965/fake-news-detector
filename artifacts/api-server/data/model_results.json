@@ -1,0 +1,307 @@
+{
+  "trainingSamples": 22933,
+  "folds": 10,
+  "labelEncoding": {
+    "fake": 0,
+    "real": 1
+  },
+  "experiments": [
+    {
+      "configuration": "linguistic-only",
+      "featureCount": 21,
+      "accuracy": 0.8527,
+      "precision": 0.8689,
+      "recall": 0.9113,
+      "f1Score": 0.8896,
+      "rocAuc": 0.9200,
+      "confusionMatrix": [
+        [
+          5947,
+          2053
+        ],
+        [
+          1325,
+          13608
+        ]
+      ]
+    },
+    {
+      "configuration": "structural-only",
+      "featureCount": 7,
+      "accuracy": 0.8649,
+      "precision": 0.8967,
+      "recall": 0.8956,
+      "f1Score": 0.8962,
+      "rocAuc": 0.9360,
+      "confusionMatrix": [
+        [
+          6460,
+          1540
+        ],
+        [
+          1559,
+          13374
+        ]
+      ]
+    },
+    {
+      "configuration": "combined",
+      "featureCount": 128,
+      "accuracy": 0.9248,
+      "precision": 0.9429,
+      "recall": 0.9415,
+      "f1Score": 0.9422,
+      "rocAuc": 0.9766,
+      "confusionMatrix": [
+        [
+          7149,
+          851
+        ],
+        [
+          874,
+          14059
+        ]
+      ]
+    }
+  ],
+  "featureImportances": {
+    "linguistic": [
+      {
+        "name": "adverbRatio",
+        "importance": 0.083529
+      },
+      {
+        "name": "exclamationDensity",
+        "importance": 0.079403
+      },
+      {
+        "name": "capsWordRatio",
+        "importance": 0.077475
+      },
+      {
+        "name": "totalWordCount",
+        "importance": 0.07401
+      },
+      {
+        "name": "exclamationCount",
+        "importance": 0.067134
+      },
+      {
+        "name": "lexicalDiversity",
+        "importance": 0.066327
+      },
+      {
+        "name": "nounRatio",
+        "importance": 0.062696
+      },
+      {
+        "name": "uniqueWordCount",
+        "importance": 0.058213
+      },
+      {
+        "name": "verbRatio",
+        "importance": 0.042023
+      },
+      {
+        "name": "ariScore",
+        "importance": 0.041507
+      },
+      {
+        "name": "sentimentSubjectivity",
+        "importance": 0.039242
+      },
+      {
+        "name": "adjectiveRatio",
+        "importance": 0.037844
+      },
+      {
+        "name": "questionCount",
+        "importance": 0.037269
+      },
+      {
+        "name": "readabilityScore",
+        "importance": 0.036864
+      },
+      {
+        "name": "readabilityGrade",
+        "importance": 0.033608
+      },
+      {
+        "name": "sentimentPolarity",
+        "importance": 0.033473
+      },
+      {
+        "name": "gunningFog",
+        "importance": 0.030121
+      },
+      {
+        "name": "smogIndex",
+        "importance": 0.0301
+      },
+      {
+        "name": "firstPersonRatio",
+        "importance": 0.0291
+      },
+      {
+        "name": "certaintyRatio",
+        "importance": 0.024579
+      },
+      {
+        "name": "negativeAffectRatio",
+        "importance": 0.015483
+      }
+    ],
+    "structural": [
+      {
+        "name": "titleBodyRatio",
+        "importance": 0.33758
+      },
+      {
+        "name": "avgSentenceLength",
+        "importance": 0.224721
+      },
+      {
+        "name": "punctuationDensity",
+        "importance": 0.116231
+      },
+      {
+        "name": "quotationFrequency",
+        "importance": 0.10791
+      },
+      {
+        "name": "capitalizationRatio",
+        "importance": 0.107765
+      },
+      {
+        "name": "sentenceCount",
+        "importance": 0.105792
+      },
+      {
+        "name": "paragraphCount",
+        "importance": 0.0
+      }
+    ],
+    "combined": [
+      {
+        "name": "titleBodyRatio",
+        "importance": 0.1297
+      },
+      {
+        "name": "tfidf_said",
+        "importance": 0.0777
+      },
+      {
+        "name": "avgSentenceLength",
+        "importance": 0.0658
+      },
+      {
+        "name": "exclamationDensity",
+        "importance": 0.0507
+      },
+      {
+        "name": "exclamationCount",
+        "importance": 0.0379
+      },
+      {
+        "name": "adverbRatio",
+        "importance": 0.0336
+      },
+      {
+        "name": "totalWordCount",
+        "importance": 0.0307
+      },
+      {
+        "name": "capsWordRatio",
+        "importance": 0.0301
+      },
+      {
+        "name": "uniqueWordCount",
+        "importance": 0.0235
+      },
+      {
+        "name": "sentenceCount",
+        "importance": 0.0233
+      },
+      {
+        "name": "lexicalDiversity",
+        "importance": 0.020348
+      },
+      {
+        "name": "quotationFrequency",
+        "importance": 0.019796
+      },
+      {
+        "name": "nounRatio",
+        "importance": 0.016542
+      },
+      {
+        "name": "punctuationDensity",
+        "importance": 0.015049
+      },
+      {
+        "name": "questionCount",
+        "importance": 0.015046
+      },
+      {
+        "name": "readabilityScore",
+        "importance": 0.013639
+      },
+      {
+        "name": "verbRatio",
+        "importance": 0.013167
+      },
+      {
+        "name": "ariScore",
+        "importance": 0.013056
+      },
+      {
+        "name": "smogIndex",
+        "importance": 0.011697
+      },
+      {
+        "name": "capitalizationRatio",
+        "importance": 0.010683
+      },
+      {
+        "name": "sentimentSubjectivity",
+        "importance": 0.010465
+      },
+      {
+        "name": "readabilityGrade",
+        "importance": 0.009872
+      },
+      {
+        "name": "gunningFog",
+        "importance": 0.009138
+      },
+      {
+        "name": "tfidf_duterte",
+        "importance": 0.008406
+      },
+      {
+        "name": "adjectiveRatio",
+        "importance": 0.008183
+      },
+      {
+        "name": "tfidf_city",
+        "importance": 0.008166
+      },
+      {
+        "name": "sentimentPolarity",
+        "importance": 0.007968
+      },
+      {
+        "name": "tfidf_department",
+        "importance": 0.007471
+      },
+      {
+        "name": "tfidf_government",
+        "importance": 0.00726
+      },
+      {
+        "name": "tfidf_filipino",
+        "importance": 0.007043
+      }
+    ]
+  }
+}

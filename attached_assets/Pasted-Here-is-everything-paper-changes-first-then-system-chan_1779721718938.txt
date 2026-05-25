@@ -1,0 +1,58 @@
+Here is everything — paper changes first, then system changes.
+
+PAPER CHANGES
+1. Abstract — last sentence
+ORIGINAL:
+
+The system improves transparency through Random Forest feature importance analysis, contributing to fake news detection research by systematically comparing linguistic and structural features within an interpretable machine learning framework.
+
+NEW:
+
+The system improves transparency through Random Forest feature importance analysis and a per-article natural language explanation module that identifies the specific linguistic and structural signals that triggered each classification. The prototype further integrates the Google Fact Check Tools API to surface published fact-checks from verified Philippine and international publishers, enabling users to cross-verify results against human-reviewed verdicts. The study contributes to fake news detection research by systematically comparing linguistic and structural features within an interpretable, evidence-linked machine learning framework.
+
+2. Objective 4
+ORIGINAL:
+
+4. Recommend a prescriptive framework for a linguistic-structural fake news detection system by identifying the critical feature combinations and classification thresholds that minimize false negatives in real-time misinformation detection.
+
+NEW:
+
+4. Recommend a prescriptive framework for a linguistic-structural fake news detection system by identifying the critical feature combinations and classification thresholds that minimize false negatives in real-time misinformation detection, and implement a prototype interface that provides per-article natural language explanations of classification decisions alongside published fact-checks retrieved from the Google Fact Check Tools API for user-side verification.
+
+3. Methodology — new subsection E (entirely new, add after subsection D)
+ORIGINAL:
+(does not exist)
+
+NEW:
+
+E. Prototype Interface and Explanation Module
+
+The web-based prototype implements two transparency enhancements beyond the core classifier output.
+
+First, a per-article explanation module generates a natural language rationale for each classification decision. The extracted feature values for a submitted article are compared against the mean feature values of fake and real articles in the training set. The features whose values deviate most strongly in the direction of the predicted class are identified and surfaced as the primary drivers of the verdict. For example, an article classified as fake with a high title-body ratio and elevated exclamation density would generate: "This article was flagged as likely fake because its title is disproportionately long relative to its body — a known clickbait signal — and contains an elevated density of exclamation marks, both strongly associated with misinformation in the training data." This explanation is derived entirely from the feature extraction pipeline with no additional model.
+
+Second, the prototype queries the Google Fact Check Tools API (Google, 2024) at classification time using keywords extracted from the article title. The API returns matching fact-checks from verified publishers — including AFP Fact Check Philippines, VERA Files, and Rappler — with verdicts, publisher names, and source URLs displayed directly in the result interface. This allows users to cross-reference the system's machine-learning verdict against independent human fact-checks without leaving the platform.
+
+4. Ethical Considerations — one sentence addition
+ORIGINAL:
+
+The prototype interface follows a privacy-by-design framework no user-submitted text is permanently stored after classification output is generated.
+
+NEW:
+
+The prototype interface follows a privacy-by-design framework: no user-submitted text is permanently stored after classification output is generated. Google Fact Check Tools API queries transmit only extracted title keywords — not the full article text — to the external service, in accordance with the API's terms of service and the study's data minimization principle.
+
+5. Conclusion — second paragraph, last sentence
+ORIGINAL:
+
+The study contributes the first systematic ablation study of linguistic versus structural feature classes on Philippine news data, alongside a publicly accessible web-based prototype enabling real-time classification with feature-level explanations.
+
+NEW:
+
+The study contributes the first systematic ablation study of linguistic versus structural feature classes on Philippine news data, alongside a publicly accessible web-based prototype enabling real-time classification with per-article natural language explanations and live fact-check results retrieved from the Google Fact Check Tools API for immediate user-side verification.
+
+6. References — add one new entry at the end
+ADD:
+
+[13] Google, "Fact Check Tools API," Google Developers, 2024. [Online]. Available: https://developers.google.com/fact-check/tools/api
+

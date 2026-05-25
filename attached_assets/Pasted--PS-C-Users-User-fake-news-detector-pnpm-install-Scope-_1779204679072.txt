@@ -1,0 +1,52 @@
+
+PS C:\Users\User\fake-news-detector> pnpm install
+Scope: all 9 workspace projects
+Lockfile is up to date, resolution step is skipped
+Packages: +541
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ WARN  Tarball download average speed 31 KiB/s (size 38 KiB) is below 50 KiB/s: https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz (GET)
+Downloading wordnet-db@3.1.14: 10.55 MB/10.55 MB, done
+Downloading react-icons@5.6.0: 22.42 MB/22.42 MB, done
+Progress: resolved 541, reused 0, downloaded 541, added 541, done
+node_modules/.pnpm/esbuild@0.27.3/node_modules/esbuild: Running postinstall scripnode_modules/.pnpm/esbuild@0.27.3/node_modules/esbuild: Running postinstall script, failed in 199ms
+.../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+│ C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modu…
+│     throw new Error(`Expected ${JSON.stringify(versionFromPackageJSON)} but …
+│           ^
+│ Error: Expected "0.27.3" but got "0.24.0"
+│     at validateBinaryVersion (C:\Users\User\fake-news-detector\node_modules\…
+│     at C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\no…
+│ Node.js v22.12.0
+└─ Failed in 199ms at C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild
+ ELIFECYCLE  Command failed with exit code 1.
+PS C:\Users\User\fake-news-detector> $env:ESBUILD_BINARY_PATH = (Get-Command esbuild).Source
+PS C:\Users\User\fake-news-detector> pnpm install --ignore-scripts
+Scope: all 9 workspace projects
+Lockfile is up to date, resolution step is skipped
+Packages: +541
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 541, reused 541, downloaded 0, added 541, done
+Done in 22.7s using pnpm v10.33.4
+PS C:\Users\User\fake-news-detector> $env:ESBUILD_BINARY_PATH = (Get-Command esbuild).Source
+PS C:\Users\User\fake-news-detector> pnpm --filter @workspace/fake-news-detector run dev
+
+> @workspace/fake-news-detector@0.0.0 dev C:\Users\User\fake-news-detector\artifacts\fake-news-detector
+> vite --config vite.config.ts --host 0.0.0.0
+
+failed to load config from C:\Users\User\fake-news-detector\artifacts\fake-news-detector\vite.config.ts
+error when starting dev server:
+Error: spawn EFTYPE
+    at ChildProcess.spawn (node:internal/child_process:420:11)
+    at Object.spawn (node:child_process:753:9)
+    at ensureServiceIsRunning (C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:1978:29)
+    at build (C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:1876:26)
+    at bundleConfigFile (file:///C:/Users/User/fake-news-detector/node_modules/.pnpm/vite@7.3.3_@types+node@25.6_ae3e33f3fe335111b5390f6db5b643d9/node_modules/vite/dist/node/chunks/config.js:35835:23)
+    at bundleAndLoadConfigFile (file:///C:/Users/User/fake-news-detector/node_modules/.pnpm/vite@7.3.3_@types+node@25.6_ae3e33f3fe335111b5390f6db5b643d9/node_modules/vite/dist/node/chunks/config.js:35822:24)
+    at loadConfigFromFile (file:///C:/Users/User/fake-news-detector/node_modules/.pnpm/vite@7.3.3_@types+node@25.6_ae3e33f3fe335111b5390f6db5b643d9/node_modules/vite/dist/node/chunks/config.js:35791:179)
+    at resolveConfig (file:///C:/Users/User/fake-news-detector/node_modules/.pnpm/vite@7.3.3_@types+node@25.6_ae3e33f3fe335111b5390f6db5b643d9/node_modules/vite/dist/node/chunks/config.js:35440:28)
+    at _createServer (file:///C:/Users/User/fake-news-detector/node_modules/.pnpm/vite@7.3.3_@types+node@25.6_ae3e33f3fe335111b5390f6db5b643d9/node_modules/vite/dist/node/chunks/config.js:25381:73)
+    at createServer$2 (file:///C:/Users/User/fake-news-detector/node_modules/.pnpm/vite@7.3.3_@types+node@25.6_ae3e33f3fe335111b5390f6db5b643d9/node_modules/vite/dist/node/chunks/config.js:25378:9)
+C:\Users\User\fake-news-detector\artifacts\fake-news-detector:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/fake-news-detector@0.0.0 dev: `vite --config vite.config.ts --host 0.0.0.0`
+Exit status 1
+PS C:\Users\User\fake-news-detector> 

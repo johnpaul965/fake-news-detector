@@ -1,0 +1,43 @@
+it pull origin main
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 6 (delta 1), reused 1 (delta 1), pack-reused 5 (from 1)
+Unpacking objects: 100% (6/6), 62.13 KiB | 138.00 KiB/s, done.
+From https://github.com/johnpaul965/fake-news-detector
+ * branch            main       -> FETCH_HEAD
+ + eab71b7...b8d2493 main       -> origin/main  (forced update)
+fatal: refusing to merge unrelated histories
+PS C:\Users\User\fake-news-detector> pnpm install --no-frozen-lockfile
+Scope: all 9 workspace projects
+Lockfile is up to date, resolution step is skipped
+Already up to date
+. preinstall$ node -e "const a=process.env.npm_config_user_agent||'';if(!a.sta…
+└─ Done in 93ms
+Done in 1.2s using pnpm v10.33.4
+PS C:\Users\User\fake-news-detector> $env:PORT = "8080"
+PS C:\Users\User\fake-news-detector> $env:DATABASE_URL = "postgresql://postgres:Johnpaulbtiu@localhost:5432/fakenews"
+PS C:\Users\User\fake-news-detector> pnpm --filter @workspace/api-server run dev:local
+
+> @workspace/api-server@0.0.0 dev:local C:\Users\User\fake-news-detector\artifacts\api-server
+> cross-env NODE_ENV=development npx tsx src/index.ts
+
+X [ERROR] Cannot start service: Host version "0.27.3" does not match binary version "0.24.0"
+
+1 error
+
+node:internal/modules/run_main:122
+    triggerUncaughtException(
+    ^
+Error [TransformError]: The service was stopped
+    at C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:718:38
+    at responseCallbacks.<computed> (C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:603:9)
+    at Socket.afterClose (C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:594:28)
+    at Socket.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+
+Node.js v22.12.0
+C:\Users\User\fake-news-detector\artifacts\api-server:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/api-server@0.0.0 dev:local: `cross-env NODE_ENV=development npx tsx src/index.ts`
+Exit status 1
+PS C:\Users\User\fake-news-detector> 

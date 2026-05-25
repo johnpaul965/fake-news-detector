@@ -1,0 +1,41 @@
+Planning DATABASE_URL environment variable setup
+Great progress — the build works! Now it just needs the database URL. Set it in PowerShell before running:
+
+$env:DATABASE_URL = "your_replit_database_url_here"
+pnpm --filter @workspace/api-server run dev
+
+To get your DATABASE_URL, go to your Replit project → click the Secrets tab (lock icon on the left sidebar) → find DATABASE_URL and copy the value.
+
+Then paste it into that command replacing your_replit_database_url_here.
+
+i want you to transfer to another replit give the something that you want to tell other replit
+
+Just now
+
+2 actions
+Here's a handoff summary you can paste at the start of a new Replit conversation:
+
+Project: Fake News Detector — pnpm monorepo, React+Vite frontend (port 5173), Express API (port 8080), PostgreSQL+Drizzle ORM. Research prototype for a Leyte Normal University study on fake news detection using Random Forest classification.
+
+Current situation: The user is a student preparing a panel presentation. The app runs fine on Replit. They are trying to run it locally on Windows (VSCode/PowerShell).
+
+What's been fixed so far:
+
+package.json preinstall script — removed the sh -c '...' line (not cross-platform; user just deletes it locally)
+artifacts/api-server/package.json dev script — changed NODE_ENV=development to cross-env NODE_ENV=development (cross-env is already a devDependency)
+esbuild binary mismatch — resolved by installing @esbuild/win32-x64@0.27.3 globally via npm and setting $env:ESBUILD_BINARY_PATH
+Where the user left off: The API server now builds successfully but crashes with DATABASE_URL must be set. The user needs to copy DATABASE_URL from Replit Secrets and set it in PowerShell:
+
+$env:DATABASE_URL = "paste_value_from_replit_secrets"
+pnpm --filter @workspace/api-server run dev
+
+After that, Terminal 2 for the frontend:
+
+$env:PORT = "5173"
+$env:BASE_PATH = "/"
+pnpm --filter @workspace/fake-news-detector run dev
+
+Then open http://localhost:5173.
+
+Note: These env vars ($env:...) only last for the current PowerShell session. The user may want a .env file for convenience — the API server uses dotenv so a .env in the project root with DATABASE_URL=... would be picked up automatically.
+

@@ -1,0 +1,38 @@
+
+PS C:\Users\User\fake-news-detector> Get-ChildItem -Path "$env:LOCALAPPDATA\pnpm" -Filter "esbuild.exe" -Recurse -ErrorAction SilentlyContinue | Select-Object FullName
+PS C:\Users\User\fake-news-detector> Get-ChildItem -Path "C:\Users\User" -Filter "esbuild.exe" -Recurse -ErrorAction SilentlyContinue 2>&1 | Select-Object FullName | Select-Object -First 10
+
+FullName                                                                        
+--------                                                                        
+C:\Users\User\event-management-system\backend\node_modules\@esbuild\win32-x64...
+C:\Users\User\event-management-system\frontend\node_modules\@esbuild\win32-x6...
+C:\Users\User\node_modules\@esbuild\win32-x64\esbuild.exe                       
+
+
+PS C:\Users\User\fake-news-detector> $env:ESBUILD_BINARY_PATH = "C:\Users\User\node_modules\@esbuild\win32-x64\esbuild.exe"
+PS C:\Users\User\fake-news-detector> pnpm install --ignore-scripts
+Scope: all 9 workspace projects
+Lockfile is up to date, resolution step is skipped
+Already up to date
+Done in 1.1s using pnpm v10.33.4
+PS C:\Users\User\fake-news-detector> pnpm --filter @workspace/fake-news-detector run dev
+
+> @workspace/fake-news-detector@0.0.0 dev C:\Users\User\fake-news-detector\artifacts\fake-news-detector
+> vite --config vite.config.ts --host 0.0.0.0
+
+X [ERROR] Cannot start service: Host version "0.27.3" does not match binary version "0.24.0"
+
+1 error
+failed to load config from C:\Users\User\fake-news-detector\artifacts\fake-news-detector\vite.config.ts
+error when starting dev server:
+Error: The service was stopped
+    at C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:949:34
+    at responseCallbacks.<computed> (C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:603:9)
+    at Socket.afterClose (C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:594:28)
+    at Socket.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+C:\Users\User\fake-news-detector\artifacts\fake-news-detector:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/fake-news-detector@0.0.0 dev: `vite --config vite.config.ts --host 0.0.0.0`
+Exit status 1
+PS C:\Users\User\fake-news-detector> 

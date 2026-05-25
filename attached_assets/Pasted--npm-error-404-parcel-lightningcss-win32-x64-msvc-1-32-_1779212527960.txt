@@ -1,0 +1,68 @@
+
+npm error 404  '@parcel/lightningcss-win32-x64-msvc@1.32.0' is not in this registry.
+npm error 404
+npm error 404 Note that you can also install from a
+npm error 404 tarball, folder, http url, or git url.
+npm error A complete log of this run can be found in: C:\Users\User\AppData\Local\npm-cache\_logs\2026-05-19T17_41_06_462Z-debug-0.log
+PS C:\esbuild-temp> Pop-Location
+PS C:\Users\User\fake-news-detector> # Copy it to where pnpm expects it
+PS C:\Users\User\fake-news-detector> New-Item -ItemType Directory -Force -Path "C:\Users\User\fake-news-detector\node_modules\.pnpm\lightningcss@1.32.0\node_modules\lightningcss"
+
+
+    Directory: C:\Users\User\fake-news-detector\node_modules\.pnpm\lightni
+    ngcss@1.32.0\node_modules
+
+
+Mode                 LastWriteTime         Length Name                    
+----                 -------------         ------ ----                    
+d-----         5/19/2026  11:30 PM                lightningcss            
+
+
+PS C:\Users\User\fake-news-detector> Copy-Item -Recurse "C:\esbuild-temp\node_modules\@parcel\lightningcss-win32-x64-msvc" "C:\Users\User\fake-news-detector\node_modules\.pnpm\lightningcss@1.32.0\node_modules\lightningcss\"
+Copy-Item : Cannot find path 
+'C:\esbuild-temp\node_modules\@parcel\lightningcss-win32-x64-msvc' 
+because it does not exist.
+At line:1 char:1
++ Copy-Item -Recurse "C:\esbuild-temp\node_modules\@parcel\lightningcss 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\esbuild-temp...-win32-x 
+   64-msvc:String) [Copy-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands. 
+   CopyItemCommand
+ 
+PS C:\Users\User\fake-news-detector> Push-Location C:\esbuild-temp
+PS C:\esbuild-temp> npm install lightningcss-win32-x64-msvc@1.32.0
+
+added 1 package, and audited 3 packages in 3s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\esbuild-temp> Pop-Location
+PS C:\Users\User\fake-news-detector> Copy-Item -Recurse "C:\esbuild-temp\node_modules\lightningcss-win32-x64-msvc" "C:\Users\User\fake-news-detector\node_modules\.pnpm\lightningcss@1.32.0\node_modules\"
+PS C:\Users\User\fake-news-detector> $env:PORT = "5173"
+PS C:\Users\User\fake-news-detector> $env:BASE_PATH = "/"
+PS C:\Users\User\fake-news-detector> pnpm --filter @workspace/fake-news-detector run dev
+
+> @workspace/fake-news-detector@0.0.0 dev C:\Users\User\fake-news-detector\artifacts\fake-news-detector
+> vite --config vite.config.ts --host 0.0.0.0
+
+failed to load config from C:\Users\User\fake-news-detector\artifacts\fake-news-detector\vite.config.ts
+error when starting dev server:
+Error: Cannot find native binding. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+    at Object.<anonymous> (C:\Users\User\fake-news-detector\node_modules\.pnpm\@tailwindcss+oxide@4.3.0\node_modules\@tailwindcss\oxide\index.js:563:11)
+    at Module._compile (node:internal/modules/cjs/loader:1565:14)
+    at Object..js (node:internal/modules/cjs/loader:1708:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at cjsLoader (node:internal/modules/esm/translators:263:5)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:196:7)
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+C:\Users\User\fake-news-detector\artifacts\fake-news-detector:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/fake-news-detector@0.0.0 dev: `vite --config vite.config.ts --host 0.0.0.0`
+Exit status 1
+PS C:\Users\User\fake-news-detector> 

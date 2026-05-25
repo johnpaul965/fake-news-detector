@@ -1,0 +1,73 @@
+ep is skipped
+Packages: +541
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   ╭─────────────────────────────────────────╮
+   │                                         │
+   │   Update available! 10.33.4 → 11.1.3.   │
+   │   Changelog: https://pnpm.io/v/11.1.3   │
+   │    To update, run: pnpm add -g pnpm     │
+   │                                         │
+   ╰─────────────────────────────────────────╯
+
+Progress: resolved 541, reused 541, downloaded 0, added 541, done
+node_modules/.pnpm/esbuild@0.27.3/node_modules/esbuild: Running postinstall scripnode_modules/.pnpm/esbuild@0.27.3/node_modules/esbuild: Running postinstall script, failed in 1.3s
+.../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+│ C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modu…
+│     throw new Error(`Expected ${JSON.stringify(versionFromPackageJSON)} but …
+│           ^
+│ Error: Expected "0.27.3" but got "0.24.0"
+│     at validateBinaryVersion (C:\Users\User\fake-news-detector\node_modules\…
+│     at C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\no…
+│ Node.js v22.12.0
+└─ Failed in 1.3s at C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild
+ ELIFECYCLE  Command failed with exit code 1.
+PS C:\Users\User\fake-news-detector> rmdir /s /q node_modules
+Remove-Item : A positional parameter cannot be found that accepts argument '/q'.
+At line:1 char:1
++ rmdir /s /q node_modules
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], ParameterBind 
+   ingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell. 
+   Commands.RemoveItemCommand
+ 
+PS C:\Users\User\fake-news-detector> pnpm install
+Scope: all 9 workspace projects
+Lockfile is up to date, resolution step is skipped
+Packages: +541
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 541, reused 541, downloaded 0, added 541, done
+node_modules/.pnpm/esbuild@0.27.3/node_modules/esbuild: Running postinstall scripnode_modules/.pnpm/esbuild@0.27.3/node_modules/esbuild: Running postinstall script, failed in 271ms
+.../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+│ C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modu…
+│     throw new Error(`Expected ${JSON.stringify(versionFromPackageJSON)} but …
+│           ^
+│ Error: Expected "0.27.3" but got "0.24.0"
+│     at validateBinaryVersion (C:\Users\User\fake-news-detector\node_modules\…
+│     at C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\no…
+│ Node.js v22.12.0
+└─ Failed in 271ms at C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild
+ ELIFECYCLE  Command failed with exit code 1.
+PS C:\Users\User\fake-news-detector> pnpm store prune
+Removed all cached metadata files
+Removed 7 files
+Removed 1 package
+PS C:\Users\User\fake-news-detector> pnpm install
+Scope: all 9 workspace projects
+Lockfile is up to date, resolution step is skipped
+Packages: +541
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 541, reused 540, downloaded 1, added 541, done
+node_modules/.pnpm/esbuild@0.27.3/node_modules/esbuild: Running postinstall scripnode_modules/.pnpm/esbuild@0.27.3/node_modules/esbuild: Running postinstall script, failed in 174ms
+.../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+│ C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modu…
+│     throw new Error(`Expected ${JSON.stringify(versionFromPackageJSON)} but …
+│           ^
+│ Error: Expected "0.27.3" but got "0.24.0"
+│     at validateBinaryVersion (C:\Users\User\fake-news-detector\node_modules\…
+│     at C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\no…
+│ Node.js v22.12.0
+└─ Failed in 174ms at C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild
+ ELIFECYCLE  Command failed with exit code 1.
+PS C:\Users\User\fake-news-detector> 

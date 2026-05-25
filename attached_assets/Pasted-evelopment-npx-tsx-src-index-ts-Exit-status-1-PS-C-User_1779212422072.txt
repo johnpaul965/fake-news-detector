@@ -1,0 +1,47 @@
+evelopment npx tsx src/index.ts`
+Exit status 1
+PS C:\Users\User\fake-news-detector> # Step 1: Install the binary in a temp folder
+PS C:\Users\User\fake-news-detector> New-Item -ItemType Directory -Force -Path C:\esbuild-temp
+
+
+    Directory: C:\
+
+
+Mode                 LastWriteTime         Length Name                          
+----                 -------------         ------ ----                          
+d-----         5/20/2026   1:38 AM                esbuild-temp                  
+
+
+PS C:\Users\User\fake-news-detector> Push-Location C:\esbuild-temp
+PS C:\esbuild-temp> npm install @esbuild/win32-x64@0.27.3
+
+added 1 package in 1s
+PS C:\esbuild-temp> Pop-Location
+PS C:\Users\User\fake-news-detector> # Step 2: Copy it to exactly where pnpm's esbuild expects it
+PS C:\Users\User\fake-news-detector> New-Item -ItemType Directory -Force -Path "C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\@esbuild"
+
+
+    Directory: C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.
+    3\node_modules
+
+
+Mode                 LastWriteTime         Length Name                          
+----                 -------------         ------ ----                          
+d-----         5/20/2026   1:39 AM                @esbuild                      
+
+
+PS C:\Users\User\fake-news-detector> Copy-Item -Recurse "C:\esbuild-temp\node_modules\@esbuild\win32-x64" "C:\Users\User\fake-news-detector\node_modules\.pnpm\esbuild@0.27.3\node_modules\@esbuild\"
+PS C:\Users\User\fake-news-detector> # Step 3: Run the server
+PS C:\Users\User\fake-news-detector> $env:PORT = "8080"
+PS C:\Users\User\fake-news-detector> $env:DATABASE_URL = "postgresql://postgres:Johnpaulbtiu@localhost:5432/fakenews"
+PS C:\Users\User\fake-news-detector> pnpm --filter @workspace/api-server run dev:local
+
+> @workspace/api-server@0.0.0 dev:local C:\Users\User\fake-news-detector\artifacts\api-server
+> cross-env NODE_ENV=development npx tsx src/index.ts
+
+[01:39:34.077] INFO (9472): Training Random Forest models (3 configurations, 10-fold CV)...
+[01:39:57.006] INFO (9472): Models trained and ready
+    elapsed: "22929ms"
+    dataSource: "synthetic data (500 samples)"
+[01:39:57.010] INFO (9472): Server listening
+    port: 8080

@@ -1,0 +1,47 @@
+
+PS C:\Users\User\fake-news-detector> cd C:\Users\User\fake-news-detector
+PS C:\Users\User\fake-news-detector> git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 5 (delta 3), reused 5 (delta 3), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 795 bytes | 39.00 KiB/s, done.
+From https://github.com/johnpaul965/fake-news-detector
+   4441a9f..de0b2b7  main       -> origin/main
+Updating 4441a9f..de0b2b7
+Fast-forward
+ artifacts/api-server/package.json | 1 +
+ 1 file changed, 1 insertion(+)
+PS C:\Users\User\fake-news-detector> $env:PORT = "8080"
+PS C:\Users\User\fake-news-detector> $env:DATABASE_URL = "postgresql://postgres:Johnpaulbtiu@localhost:5432/fakenews"
+PS C:\Users\User\fake-news-detector> pnpm --filter @workspace/api-server run dev:local
+
+> @workspace/api-server@0.0.0 dev:local C:\Users\User\fake-news-detector\artifacts\api-server
+> cross-env NODE_ENV=development tsx src/index.ts
+
+'tsx' is not recognized as an internal or external command,
+operable program or batch file.
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: spawn tsx ENOENT
+    at notFoundError (C:\Users\User\fake-news-detector\node_modules\.pnpm\cross-spawn@7.0.6\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\User\fake-news-detector\node_modules\.pnpm\cross-spawn@7.0.6\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\User\fake-news-detector\node_modules\.pnpm\cross-spawn@7.0.6\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+Emitted 'error' event on ChildProcess instance at:
+    at cp.emit (C:\Users\User\fake-news-detector\node_modules\.pnpm\cross-spawn@7.0.6\node_modules\cross-spawn\lib\enoent.js:30:37)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12) {
+  code: 'ENOENT',
+  errno: 'ENOENT',
+  syscall: 'spawn tsx',
+  path: 'tsx',
+  spawnargs: [ 'src/index.ts' ]
+}
+
+Node.js v22.12.0
+C:\Users\User\fake-news-detector\artifacts\api-server:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/api-server@0.0.0 dev:local: `cross-env NODE_ENV=development tsx src/index.ts`
+Exit status 1
+PS C:\Users\User\fake-news-detector> 

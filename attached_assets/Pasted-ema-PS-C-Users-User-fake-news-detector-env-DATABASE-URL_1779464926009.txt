@@ -1,0 +1,454 @@
+ema                  
+
+
+PS C:\Users\User\fake-news-detector> $env:DATABASE_URL = "postgresql://postgres:Johnpaulburrerostiu@localhost:5432/fakenews"
+>> pnpm --filter @workspace/db run push
+
+> @workspace/db@0.0.0 push C:\Users\User\fake-news-detector\lib\db
+> drizzle-kit push --config ./drizzle.config.ts
+
+Reading config file 'C:\Users\User\fake-news-detector\lib\db\drizzle.config.ts'
+ Error  No schema files found for path config ['C:\Users\User\fake-news-detector\lib\db\src\schema\index.ts']
+ Error  If path represents a file - please make sure to use .ts or other extension in the path
+C:\Users\User\fake-news-detector\lib\db:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/db@0.0.0 push: `drizzle-kit push --config ./drizzle.config.ts`
+Exit status 1
+PS C:\Users\User\fake-news-detector> $env:DATABASE_URL = "postgresql://postgres:Johnpaulburrerostiu@localhost:5432/fakenews"
+>> >> pnpm --filter @workspace/db run push
+>> 
+>> > @workspace/db@0.0.0 push C:\Users\User\fake-news-detector\lib\db
+>> > drizzle-kit push --config ./drizzle.config.ts
+>> 
+>> Reading config file 'C:\Users\User\fake-news-detector\lib\db\drizzle.config.ts'
+>>  Error  No schema files found for path config ['C:\Users\User\fake-news-detector\lib\db\src\schema\index.ts']
+>>  Error  If path represents a file - please make sure to use .ts or other extension in the path
+>> C:\Users\User\fake-news-detector\lib\db:
+>>  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/db@0.0.0 push: `drizzle-kit push --config ./drizzle.config.ts`
+>> Exit status 1
+>> PS C:\Users\User\fake-news-detector> $env:DATABASE_URL = "postgresql://postgres:Johnpaulburrerostiu@localhost:5432/fakenews"
+>> >> pnpm --filter @workspace/db run push
+>> 
+>> > @workspace/db@0.0.0 push C:\Users\User\fake-news-detector\lib\db
+>> > drizzle-kit push --config ./drizzle.config.ts
+>> 
+>> Reading config file 'C:\Users\User\fake-news-detector\lib\db\drizzle.config.ts'
+>>  Error  No schema files found for path config ['C:\Users\User\fake-news-detector\lib\db\src\schema\index.ts']
+>>  Error  If path represents a file - please make sure to use .ts or other extension in the path
+>> C:\Users\User\fake-news-detector\lib\db:
+>>  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/db@0.0.0 push: `drizzle-kit push --config ./drizzle.config.ts`
+>> Exit status 1
+>> PS C:\Users\User\fake-news-detector> $env:DATABASE_URL = "postgresql://postgres:Johnpaulburrerostiu@localhost:5432/fakenews"
+>> >> pnpm --filter @workspace/db run push
+>> 
+>> > @workspace/db@0.0.0 push C:\Users\User\fake-news-detector\lib\db
+>> > drizzle-kit push --config ./drizzle.config.ts
+>> 
+>> Reading config file 'C:\Users\User\fake-news-detector\lib\db\drizzle.config.ts'
+>>  Error  No schema files found for path config ['C:\Users\User\fake-news-detector\lib\db\src\schema\index.ts']
+>>  Error  If path represents a file - please make sure to use .ts or other extension in the path
+>> C:\Users\User\fake-news-detector\lib\db:
+>>  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/db@0.0.0 push: `drizzle-kit push --config ./drizzle.config.ts`
+>> Exit status 1
+>> PS C:\Users\User\fake-news-detector> export * from "./classifications";
+>> : The term '>>' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:2 char:1
++ >> pnpm --filter @workspace/db run push
++ ~~
+    + CategoryInfo          : ObjectNotFound: (>>:String) [], CommandNotF 
+   oundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+> : The term '>' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:4 char:1
++ > @workspace/db@0.0.0 push C:\Users\User\fake-news-detector\lib\db
++ ~
+    + CategoryInfo          : ObjectNotFound: (>:String) [], CommandNotFo 
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+> : The term '>' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:5 char:1
++ > drizzle-kit push --config ./drizzle.config.ts
++ ~
+    + CategoryInfo          : ObjectNotFound: (>:String) [], CommandNotFo 
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Reading : The term 'Reading' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:7 char:1
++ Reading config file 'C:\Users\User\fake-news-detector\lib\db\drizzle. 
+...
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reading:String) [], Comman 
+   dNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Error : The term 'Error' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:8 char:2
++  Error  No schema files found for path config ['C:\Users\User\fake-ne 
+...
++  ~~~~~
+    + CategoryInfo          : ObjectNotFound: (Error:String) [], CommandN 
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Error : The term 'Error' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:9 char:2
++  Error  If path represents a file - please make sure to use .ts or ot 
+...
++  ~~~~~
+    + CategoryInfo          : ObjectNotFound: (Error:String) [], CommandN 
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\User\fake-news-detector\lib\db: : The term 
+'C:\Users\User\fake-news-detector\lib\db:' is not recognized as the name 
+of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At line:10 char:1
++ C:\Users\User\fake-news-detector\lib\db:
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\User\fake-news-de 
+   tector\lib\db::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL : The term 
+'ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL' is not recognized as the name of a 
+cmdlet, function, script file, or operable program. Check the spelling of 
+the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:11 char:2
++  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/db@0.0.0 push: `drizzl 
+...
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ERR_PNPM_RECURSIVE_RUN_FIR 
+   ST_FAIL:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Get-Process : A positional parameter cannot be found that accepts 
+argument 
+'postgresql://postgres:Johnpaulburrerostiu@localhost:5432/fakenews'.
+At line:13 char:1
++ PS C:\Users\User\fake-news-detector> $env:DATABASE_URL = "postgresql: 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], Paramet 
+   erBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Power 
+   Shell.Commands.GetProcessCommand
+ 
+>> : The term '>>' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:14 char:1
++ >> pnpm --filter @workspace/db run push
++ ~~
+    + CategoryInfo          : ObjectNotFound: (>>:String) [], CommandNotF 
+   oundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+> : The term '>' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:16 char:1
++ > @workspace/db@0.0.0 push C:\Users\User\fake-news-detector\lib\db
++ ~
+    + CategoryInfo          : ObjectNotFound: (>:String) [], CommandNotFo 
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+> : The term '>' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:17 char:1
++ > drizzle-kit push --config ./drizzle.config.ts
++ ~
+    + CategoryInfo          : ObjectNotFound: (>:String) [], CommandNotFo 
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Reading : The term 'Reading' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:19 char:1
++ Reading config file 'C:\Users\User\fake-news-detector\lib\db\drizzle. 
+...
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reading:String) [], Comman 
+   dNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Error : The term 'Error' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:20 char:2
++  Error  No schema files found for path config ['C:\Users\User\fake-ne 
+...
++  ~~~~~
+    + CategoryInfo          : ObjectNotFound: (Error:String) [], CommandN 
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Error : The term 'Error' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:21 char:2
++  Error  If path represents a file - please make sure to use .ts or ot 
+...
++  ~~~~~
+    + CategoryInfo          : ObjectNotFound: (Error:String) [], CommandN 
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\User\fake-news-detector\lib\db: : The term 
+'C:\Users\User\fake-news-detector\lib\db:' is not recognized as the name 
+of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At line:22 char:1
++ C:\Users\User\fake-news-detector\lib\db:
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\User\fake-news-de 
+   tector\lib\db::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL : The term 
+'ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL' is not recognized as the name of a 
+cmdlet, function, script file, or operable program. Check the spelling of 
+the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:23 char:2
++  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/db@0.0.0 push: `drizzl 
+...
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ERR_PNPM_RECURSIVE_RUN_FIR 
+   ST_FAIL:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Get-Process : A positional parameter cannot be found that accepts 
+argument 
+'postgresql://postgres:Johnpaulburrerostiu@localhost:5432/fakenews'.
+At line:25 char:1
++ PS C:\Users\User\fake-news-detector> $env:DATABASE_URL = "postgresql: 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], Paramet 
+   erBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Power 
+   Shell.Commands.GetProcessCommand
+ 
+>> : The term '>>' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:26 char:1
++ >> pnpm --filter @workspace/db run push
++ ~~
+    + CategoryInfo          : ObjectNotFound: (>>:String) [], CommandNotF 
+   oundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+> : The term '>' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:28 char:1
++ > @workspace/db@0.0.0 push C:\Users\User\fake-news-detector\lib\db
++ ~
+    + CategoryInfo          : ObjectNotFound: (>:String) [], CommandNotFo 
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+> : The term '>' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:29 char:1
++ > drizzle-kit push --config ./drizzle.config.ts
++ ~
+    + CategoryInfo          : ObjectNotFound: (>:String) [], CommandNotFo 
+   undException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Reading : The term 'Reading' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:31 char:1
++ Reading config file 'C:\Users\User\fake-news-detector\lib\db\drizzle. 
+...
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reading:String) [], Comman 
+   dNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Error : The term 'Error' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:32 char:2
++  Error  No schema files found for path config ['C:\Users\User\fake-ne 
+...
++  ~~~~~
+    + CategoryInfo          : ObjectNotFound: (Error:String) [], CommandN 
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Error : The term 'Error' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:33 char:2
++  Error  If path represents a file - please make sure to use .ts or ot 
+...
++  ~~~~~
+    + CategoryInfo          : ObjectNotFound: (Error:String) [], CommandN 
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+C:\Users\User\fake-news-detector\lib\db: : The term 
+'C:\Users\User\fake-news-detector\lib\db:' is not recognized as the name 
+of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At line:34 char:1
++ C:\Users\User\fake-news-detector\lib\db:
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\User\fake-news-de 
+   tector\lib\db::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL : The term 
+'ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL' is not recognized as the name of a 
+cmdlet, function, script file, or operable program. Check the spelling of 
+the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:35 char:2
++  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/db@0.0.0 push: `drizzl 
+...
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ERR_PNPM_RECURSIVE_RUN_FIR 
+   ST_FAIL:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Get-Process : A positional parameter cannot be found that accepts 
+argument 'export'.
+At line:37 char:1
++ PS C:\Users\User\fake-news-detector> export * from "./classifications 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], Paramet 
+   erBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Power 
+   Shell.Commands.GetProcessCommand
+ 
+PS C:\Users\User\fake-news-detector> import { pgTable, serial, text, real, jsonb, timestamp } from "drizzle-orm/pg-core";
+At line:1 char:17
++ import { pgTable, serial, text, real, jsonb, timestamp } from "drizzl 
+...
++                 ~
+Missing argument in parameter list.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRec 
+   ordException
+    + FullyQualifiedErrorId : MissingArgument
+ 
+PS C:\Users\User\fake-news-detector> import { createInsertSchema } from "drizzle-zod";
+import : The term 'import' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ import { createInsertSchema } from "drizzle-zod";
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (import:String) [], Command 
+   NotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\User\fake-news-detector> import { z } from "zod/v4";
+import : The term 'import' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ import { z } from "zod/v4";
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (import:String) [], Command 
+   NotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\User\fake-news-detector> 
+PS C:\Users\User\fake-news-detector> export const classificationsTable = pgTable("classifications", {
+>>   id: serial("id").primaryKey(),
+>>   title: text("title").notNull(),
+>>   bodyPreview: text("body_preview").notNull(),
+>>   prediction: text("prediction").notNull(),
+>>   confidence: real("confidence").notNull(),
+>>   featuresJson: jsonb("features_json").notNull(),
+>>   experimentsJson: jsonb("experiments_json").notNull(),
+>>   createdAt: timestamp("created_at").defaultNow().notNull(),
+>> });
+At line:9 char:61
++   createdAt: timestamp("created_at").defaultNow().notNull(),
++                                                             ~
+Missing expression after ',' in pipeline element.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRec 
+   ordException
+    + FullyQualifiedErrorId : MissingExpression
+ 
+PS C:\Users\User\fake-news-detector> 
+PS C:\Users\User\fake-news-detector> export const insertClassificationSchema = createInsertSchema(classificationsTable).omit({ id: true, createdAt: true });
+classificationsTable : The term 'classificationsTable' is not recognized 
+as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that 
+the path is correct and try again.
+At line:1 char:62
++ ... lassificationSchema = 
+createInsertSchema(classificationsTable).omit({ ...
++                                              ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (classificationsTable:Strin 
+   g) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\User\fake-news-detector> export type InsertClassification = z.infer<typeof insertClassificationSchema>;
+export : The term 'export' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ export type InsertClassification = z.infer<typeof insertClassificatio 
+...
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (export:String) [], Command 
+   NotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\User\fake-news-detector> export type Classification = typeof classificationsTable.$inferSelect;
+export : The term 'export' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ export type Classification = typeof classificationsTable.$inferSelect 
+...
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (export:String) [], Command 
+   NotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\User\fake-news-detector> 
